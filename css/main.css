@@ -10,6 +10,8 @@
 #slide{
 	display: none;
 	padding: 1%;
+	overflow-x: hidden;
+	overflow-y: scroll; 
 }
 #slide div{
 	padding: 1%;
