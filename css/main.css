@@ -10,6 +10,7 @@
 
 .menu{
 	position: absolute;
+	border-radius: 6%;
 	z-index: 1;
 	background: #fff;
 	padding: 1%;
@@ -17,12 +18,18 @@
 	margin-left: 1%;
 }
 
-.search{
+.search1{
+	cursor: pointer;
 	background: url(../img/search.png) no-repeat;
 	background-position: right;
-	background-size: 6%;
+	background-size: 55%;
 	border:none;
-	width: 300px;
+	width: 30px;
+}
+.search{
+	margin-left: 10px;
+	border:none;
+	width: 250px;
 }
 
 .glyphicon-menu-hamburger{
