@@ -6,6 +6,10 @@ section .lista-entidades{
     background: #f7f9f9;
 }
 
+.lista-entidades.fecha{
+	padding-bottom: 15px;
+}
+
 .btn-proyects{
     background: transparent;
     padding-left: 0!important;
@@ -19,6 +23,7 @@ span.caret.drop-list-ent {
 .celdas-lista-ent{
 	padding-top: 1%;
 }
+
 
 .celdas-lista-ent .row{
     padding: 5px 0 5px 0;
