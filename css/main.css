@@ -8,5 +8,14 @@
 	font-weight: bold;
 }
 #slide{
-
+	display: none
+}
+#slide div{
+	padding: 1%;
+}
+.divide{
+	border-top: 1px solid black
+}
+.show{
+	display: block;
 }
