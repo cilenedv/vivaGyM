@@ -1,0 +1,30 @@
+/*Lista de entidades*/
+
+section .lista-entidades{
+    padding: 1.5%;
+    padding-bottom: 0;
+    background: #f7f9f9;
+}
+
+.btn-proyects{
+    background: transparent;
+    padding-left: 0!important;
+    padding-top: 0!important;	
+}
+
+span.caret.drop-list-ent {
+    margin-left: 5%;	
+}
+
+.celdas-lista-ent{
+	padding-top: 1%;
+}
+
+.celdas-lista-ent .row{
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid #f7f9f9;
+}
+
+.list-ent-btn{
+	padding-top: 20px;
+}
