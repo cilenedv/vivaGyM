@@ -155,7 +155,24 @@ var salirEdicion = function(){
 	$(".lap-editor").addClass("edit-hidden");
 }
 
+// $("#guardar-btn").click(function(){
+// 	alert("click");
+// 	var nombre=$("#name").val();
+// 	var direccion=$("#direccion").val();
+// 	var ubicacion=$("#select2").val();
+// 	var contacto=$("#contacto").val();
 
+// 	localStorage.setItems("name",nombre);
+// 	localStorage.setItems("direccion",direccion);
+// 	localStorage.setItems("ubicacion",ubicacion);
+// 	localStorage.setItems("contacto",contacto);
+
+// 	var guardarData=function () {
+// 	var div =document.createElement("div");
+// 	var contenedor=document.getElementById("data-save");
+// 	contenedor.appendChild(div);
+// 	}
+// });
 
 
 
