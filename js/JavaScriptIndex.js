@@ -1,5 +1,5 @@
 ﻿//var load = function(){
-	            
+
 //	console.log("hi");
 //	AgregarEntidad("hola","chau",1,2,3);
 //};
@@ -7,15 +7,15 @@
 //$(document).ready(load);
 
 
-function devolverTipoCampo(columna){
+function devolverTipoCampo(columna) {
 
     var tipoCampo = "";
 
-    if(columna == 1){
+    if (columna == 1) {
         tipoCampo = "";
-    }else if(columna == 2){
+    } else if (columna == 2) {
         tipoCampo = "";
-    }else if(columna == 3){
+    } else if (columna == 3) {
         tipoCampo = "";
     } else if (columna == 4) {
         tipoCampo = "";
@@ -89,71 +89,63 @@ function devolverTipoCampo(columna) {
 
 //};
 
-function AgregarEntidadProyectoEvaluado(nombreProyecto, direccion, fechaInicioVenta, 
-estadoProyecto, fechaInicioObra, ubicacion, fechaEntrega, conVista, empresa, contacto, url, 
-prioridad, tipo, responsable, nombreContacto, precioTotal, estadoEvaluación, 
-estadoDirectorio, latitud, longitud) {
+function AgregarEntidadProyectoEvaluado(nombreProyecto, direccion, fechaInicioVenta, estadoProyecto, fechaInicioObra, ubicacion, fechaEntrega, conVista, empresa, contacto, url, prioridad, tipo, responsable, nombreContacto, precioTotal, estadoEvaluación, estadoDirectorio, latitud, longitud) {
 
 
     var entidadProyectoEvaluado = {
-        nombreProyecto: nombreProyecto, 
-        direccion: direccion, 
-        fechaInicioVenta: fechaInicioVenta, 
+        nombreProyecto: nombreProyecto,
+        direccion: direccion,
+        fechaInicioVenta: fechaInicioVenta,
         estadoProyecto: estadoProyecto,
-        fechaInicioObra: fechaInicioObra, 
-        ubicacion: ubicacion, 
-        fechaEntrega: fechaEntrega, 
-        conVista: conVista, 
-        empresa: empresa, 
-        contacto: contacto, 
-        url: url, 
-        prioridad: prioridad, 
-        tipo: tipo, 
-        responsable: responsable, 
-        nombreContacto: nombreContacto, 
-        precioTotal: precioTotal, 
-        estadoEvaluación: estadoEvaluación, 
-        estadoDirectorio: estadoDirectorio, 
-        latitud: latitud, 
+        fechaInicioObra: fechaInicioObra,
+        ubicacion: ubicacion,
+        fechaEntrega: fechaEntrega,
+        conVista: conVista,
+        empresa: empresa,
+        contacto: contacto,
+        url: url,
+        prioridad: prioridad,
+        tipo: tipo,
+        responsable: responsable,
+        nombreContacto: nombreContacto,
+        precioTotal: precioTotal,
+        estadoEvaluación: estadoEvaluación,
+        estadoDirectorio: estadoDirectorio,
+        latitud: latitud,
         longitud: longitud
     };
 
-    localStorage.setItem("entidadProyectoEvaluado", JSON.stringify
-(entidadProyectoEvaluado));
+    localStorage.setItem("entidadProyectoEvaluado", JSON.stringify(entidadProyectoEvaluado));
 
 };
 
-function AgregarEntidadEstudioOfertas(nombreProyecto, direccion, empresa, provincia, 
-distrito, prioridad, tipoConstruccion, tipoDepartamento, precioEstimado, responsable, 
-nombreContacto, ubicacion, area, zonificacion, costoM2, precioTotal, estadoEvaluacion, 
-estadoDirectorio, url, numeroCasas, numeroPisos, numeroViviendaHectarea, m2VendiblesCliente, 
-latitud, longitud) {
-    
+function AgregarEntidadEstudioOfertas(nombreProyecto, direccion, empresa, provincia, distrito, prioridad, tipoConstruccion, tipoDepartamento, precioEstimado, responsable, nombreContacto, ubicacion, area, zonificacion, costoM2, precioTotal, estadoEvaluacion, estadoDirectorio, url, numeroCasas, numeroPisos, numeroViviendaHectarea, m2VendiblesCliente, latitud, longitud) {
+
     var entidadEstudioOfertas = {
-        nombreProyecto: nombreProyecto, 
-        direccion: direccion, 
-        empresa: empresa, 
-        provincia: provincia, 
-        distrito: distrito, 
-        prioridad: prioridad, 
-        tipoConstruccion: tipoConstruccion, 
-        tipoDepartamento: tipoDepartamento, 
-        precioEstimado: precioEstimado, 
-        responsable: responsable, 
-        nombreContacto: nombreContacto, 
-        ubicacion: ubicacion, 
-        area: area, 
+        nombreProyecto: nombreProyecto,
+        direccion: direccion,
+        empresa: empresa,
+        provincia: provincia,
+        distrito: distrito,
+        prioridad: prioridad,
+        tipoConstruccion: tipoConstruccion,
+        tipoDepartamento: tipoDepartamento,
+        precioEstimado: precioEstimado,
+        responsable: responsable,
+        nombreContacto: nombreContacto,
+        ubicacion: ubicacion,
+        area: area,
         zonificacion: zonificacion,
-        costoM2: costoM2, 
-        precioTotal: precioTotal, 
+        costoM2: costoM2,
+        precioTotal: precioTotal,
         estadoEvaluacion: estadoEvaluacion,
-        estadoDirectorio: estadoDirectorio, 
-        url: url, 
+        estadoDirectorio: estadoDirectorio,
+        url: url,
         numeroCasas: numeroCasas,
-        numeroPisos: numeroPisos, 
-        numeroViviendaHectarea: numeroViviendaHectarea, 
+        numeroPisos: numeroPisos,
+        numeroViviendaHectarea: numeroViviendaHectarea,
         m2VendiblesCliente: m2VendiblesCliente,
-        latitud: latitud, 
+        latitud: latitud,
         longitud: longitud
     };
 
@@ -161,17 +153,16 @@ latitud, longitud) {
 
 };
 
-function AgregarEntidadServicio(nombreServicio, direccion, distrito, horarioAtencion, 
-descripcionServicio, nombreContacto, ubicacion, url, latitud, longitud) {
-    
+function AgregarEntidadServicio(nombreServicio, direccion, distrito, horarioAtencion, descripcionServicio, nombreContacto, ubicacion, url, latitud, longitud) {
+
     var entidadServicio = {
-        nombreServicio: nombreServicio, 
-        direccion: direccion, 
-        distrito: distrito, 
-        horarioAtencion: horarioAtencion, 
-        descripcionServicio: descripcionServicio, 
-        nombreContacto: nombreContacto, 
-        ubicacion: ubicacion, 
+        nombreServicio: nombreServicio,
+        direccion: direccion,
+        distrito: distrito,
+        horarioAtencion: horarioAtencion,
+        descripcionServicio: descripcionServicio,
+        nombreContacto: nombreContacto,
+        ubicacion: ubicacion,
         url: url,
         latitud: latitud,
         longitud: longitud
@@ -181,17 +172,16 @@ descripcionServicio, nombreContacto, ubicacion, url, latitud, longitud) {
 
 };
 
-function AgregarEntidadTransporte(nombreTransporte, direccion, provincia, distrito, 
-horarioAtencion, url, busesDisponibles, tiempoEnMercado, latitud, longitud) {
-    
+function AgregarEntidadTransporte(nombreTransporte, direccion, provincia, distrito, horarioAtencion, url, busesDisponibles, tiempoEnMercado, latitud, longitud) {
+
     var entidadTransporte = {
-        nombreTransporte: nombreTransporte, 
-        direccion: direccion, 
-        provincia: provincia, 
-        distrito: distrito, 
-        horarioAtencion: horarioAtencion, 
-        url: url, 
-        busesDisponibles: busesDisponibles, 
+        nombreTransporte: nombreTransporte,
+        direccion: direccion,
+        provincia: provincia,
+        distrito: distrito,
+        horarioAtencion: horarioAtencion,
+        url: url,
+        busesDisponibles: busesDisponibles,
         tiempoEnMercado: tiempoEnMercado,
         latitud: latitud,
         longitud: longitud
@@ -201,17 +191,16 @@ horarioAtencion, url, busesDisponibles, tiempoEnMercado, latitud, longitud) {
 
 };
 
-function AgregarEntidadUniversidad(nombreUniversidad, direccion, numeroCarreras, provincia, 
-distrito, nombreContacto, url, cantidadEstudiantes, latitud, longitud) {
-    
+function AgregarEntidadUniversidad(nombreUniversidad, direccion, numeroCarreras, provincia, distrito, nombreContacto, url, cantidadEstudiantes, latitud, longitud) {
+
     var entidadUniversidad = {
-        nombreUniversidad: nombreUniversidad, 
-        direccion: direccion, 
-        numeroCarreras: numeroCarreras, 
-        provincia: provincia, 
-        distrito:distrito, 
-        nombreContacto: nombreContacto, 
-        url: url, 
+        nombreUniversidad: nombreUniversidad,
+        direccion: direccion,
+        numeroCarreras: numeroCarreras,
+        provincia: provincia,
+        distrito: distrito,
+        nombreContacto: nombreContacto,
+        url: url,
         cantidadEstudiantes: cantidadEstudiantes,
         latitud: latitud,
         longitud: longitud
@@ -228,8 +217,7 @@ distrito, nombreContacto, url, cantidadEstudiantes, latitud, longitud) {
 //    var obj2 = Arr[1];
 //    var atrE2 = obj.atr1 + 2;
 //    var atrE = obj.atr4 + 2;
-//    alert(atrE2 + ',' + obj.atr2 + ',' + obj.atr3 + ',' + atrE + ',' + obj.atr5 + ',' + 
-obj2.atr3);
+//    alert(atrE2 + ',' + obj.atr2 + ',' + obj.atr3 + ',' + atrE + ',' + obj.atr5 + ',' + obj2.atr3);
 
 //};
 
@@ -281,7 +269,7 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 25000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobado",
-        latitud: -12.121896, 
+        latitud: -12.121896,
         longitud: -77.034776
     };
     var obj2 = {
@@ -303,7 +291,7 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 30000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: -12.122274, 
+        latitud: -12.122274,
         longitud: -77.038172
     };
     var obj3 = {
@@ -325,7 +313,7 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 300000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: -12.123451, 
+        latitud: -12.123451,
         longitud: -77.036878
     };
     var obj4 = {
@@ -347,7 +335,7 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 25000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: -12.123168, 
+        latitud: -12.123168,
         longitud: -77.034743
     };
     var obj5 = {
@@ -369,7 +357,7 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 230000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: -12.117330, 
+        latitud: -12.117330,
         longitud: -77.035755
     };
 
@@ -409,7 +397,7 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: -12.120047, 
+        latitud: -12.120047,
         longitud: -77.037901
     };
     var obj2 = {
@@ -436,7 +424,7 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: -12.115715, 
+        latitud: -12.115715,
         longitud: -77.032386
     };
     var obj3 = {
@@ -463,7 +451,7 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: -12.121736, 
+        latitud: -12.121736,
         longitud: -77.033105
     };
     var obj4 = {
@@ -517,7 +505,7 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: -12.116564, 
+        latitud: -12.116564,
         longitud: -77.034854
     };
 
@@ -542,7 +530,7 @@ function CargarListaServicio() {
         nombreContacto: "Ángel Rodríguez",
         ubicacion: "Miraflores",
         url: "www.primax.com.pe",
-        latitud: -12.120948, 
+        latitud: -12.120948,
         longitud: -77.034825
     };
     var obj2 = {
@@ -554,7 +542,7 @@ function CargarListaServicio() {
         nombreContacto: "Raúl Borja",
         ubicacion: "Miraflores",
         url: "www.stellamaris.com.pe",
-        latitud: 12.121213, 
+        latitud: 12.121213,
         longitud: -77.038810
     };
     var obj3 = {
@@ -566,8 +554,8 @@ function CargarListaServicio() {
         nombreContacto: "Merly Luna",
         ubicacion: "Miraflores",
         url: "www.fedex.com/do",
-        latitud: -12.117908, 
-        longitud: -77.038360     
+        latitud: -12.117908,
+        longitud: -77.038360
     };/////////////////////////////////////////hi
     var obj4 = {
         nombreServicio: "Centro de Atención Integral Contra la Violencia Hacia las Mujeres - Warmi Wasi",
@@ -578,7 +566,7 @@ function CargarListaServicio() {
         nombreContacto: "Leila Torres",
         ubicacion: "Miraflores",
         url: "www.munlima.gob.pe/servicios/social/warmi-wasi",
-        latitud: -12.117917, 
+        latitud: -12.117917,
         longitud: -77.037708
     };
     var obj5 = {
@@ -590,7 +578,7 @@ function CargarListaServicio() {
         nombreContacto: "Julio Sánchez",
         ubicacion: "San Luis",
         url: "www.mafisamotors.com",
-        latitud: -12.117529, 
+        latitud: -12.117529,
         longitud: -77.031421
     };
 
@@ -615,7 +603,7 @@ function CargarListaTransporte() {
         url: "www.civa.com.pe",
         busesDisponibles: 25,
         tiempoEnMercado: "25 años",
-        latitud: -12.115735, 
+        latitud: -12.115735,
         longitud: -77.034758,
     };
     var obj2 = {
@@ -627,7 +615,7 @@ function CargarListaTransporte() {
         url: "www.floreshnos.pe",
         busesDisponibles: 27,
         tiempoEnMercado: "30 años",
-        latitud: -12.118442, 
+        latitud: -12.118442,
         longitud: -77.034736
     };
     var obj3 = {
@@ -639,7 +627,7 @@ function CargarListaTransporte() {
         url: "www.cruzdelsur.com.pe",
         busesDisponibles: 27,
         tiempoEnMercado: "28 años",
-        latitud: -12.119984, 
+        latitud: -12.119984,
         longitud: -77.036903
     };
     var obj4 = {
@@ -651,7 +639,7 @@ function CargarListaTransporte() {
         url: "www.cromotex.com.pe",
         busesDisponibles: 27,
         tiempoEnMercado: "26 años",
-        latitud: -12.122260, 
+        latitud: -12.122260,
         longitud: -77.034553
     };
     var obj5 = {
@@ -663,7 +651,7 @@ function CargarListaTransporte() {
         url: "www.ittsabus.com",
         busesDisponibles: 27,
         tiempoEnMercado: "24 años",
-        latitud: -12.120403, 
+        latitud: -12.120403,
         longitud: -77.032686
     };
 
@@ -688,7 +676,7 @@ function CargarListaUniversidad() {
         nombreContacto: "Roberto Flores",
         url: "www.udep.edu.pe",
         cantidadEstudiantes: 500,
-        latitud: -12.120057, 
+        latitud: -12.120057,
         longitud: -77.030241
     };
     var obj2 = {
@@ -700,7 +688,7 @@ function CargarListaUniversidad() {
         nombreContacto: "Miriam Núñez",
         url: "www.cientifica.edu.pe",
         cantidadEstudiantes: 1000,
-        latitud: -12.124222, 
+        latitud: -12.124222,
         longitud: -77.030917
     };
     var obj3 = {
@@ -712,7 +700,7 @@ function CargarListaUniversidad() {
         nombreContacto: "Rogelio Méndez",
         url: "www.universidadsise.edu.pe",
         cantidadEstudiantes: 2000,
-        latitud: -12.121327, 
+        latitud: -12.121327,
         longitud: -77.026196
     };
     var obj4 = {
@@ -724,7 +712,7 @@ function CargarListaUniversidad() {
         nombreContacto: "Cinthya López",
         url: "www.ulcb.edu.pe",
         cantidadEstudiantes: 400,
-        latitud: -12.131191, 
+        latitud: -12.131191,
         longitud: -77.025679
     };
     var obj5 = {
@@ -736,7 +724,7 @@ function CargarListaUniversidad() {
         nombreContacto: "Diana Juárez",
         url: "www.usil.edu.pe",
         cantidadEstudiantes: 1100,
-        latitud: -12.120529, 
+        latitud: -12.120529,
         longitud: -77.035820
     };
 
