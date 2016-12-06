@@ -48,11 +48,9 @@ var geocodeResult= function(results, status) {
         map = new google.maps.Map($(".mapa").get(0), mapOptions);
         map.fitBounds(results[0].geometry.viewport);
         var contentString = '<div id="div_ejemplo">'+
-        '<p>Este es un ejemplo de <b>InfoWindow</b>, ' +
-        'como puedes ver puedes agregar cualquier cosa, ' +
-        'cualquier <em>HTML</em>.</p>' +
-        '<p>Este InfoWindow tiene un ancho de 200px ' +
-        'y autom&aacute;ticamente da los saltos de l&iacute;nea.</p>'+
+        '<p>__nombre__</p>' +
+        '<p>__estado__</p>'+
+        '<p>__fecha__</p>'+
         '<a href="http://www.spsdemo.com/websites/PublishingImages/Forms/ByCreatedDate.aspx/">'+
         '<img src="img/link.png"></a>'+
         '<a href="">'+
