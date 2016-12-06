@@ -23,7 +23,6 @@ $('.dropdown-toggle').dropdown();
 
 var editarLista = function(){
 	$(".lap-editor").click(lapizEditor);
-	$(".np-list").keypress(guardadoEditado);
 }
 
 $(document).ready(editarLista);
@@ -34,14 +33,13 @@ var lapizEditor = function(){
 		$(contenEdit).focus();
 		$(contenEdit).parent().addClass("inputCajaEdit");
 }
-
-var guardadoEditado = function(e){
-	if (e.keycode == 13) {
-		$(".lap-editor").remove();
-	}
-	return e.which != 13;
-	$(this).parent().removeClass("inputCajaEdit");
-}
+	$(".np-list").keypress(function(e){
+		$(this).attr("contenteditable","false");
+		$(this).parent().removeClass("inputCajaEdit");
+		$(this).next().remove();	
+		return e.which != 13;
+	});
+	// 
 // $(".lap-editor").ready(function(){
 // 	$(".lap-editor").click(function(){
 // 		var contenEdit = $(this).prev();
