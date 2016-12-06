@@ -48,7 +48,7 @@ $(document).ready(function (){
 		$("#insert").append(seccion);
 		var divImg=$("<div></div>"). addClass("col-lg-2 col-md-2 col-sm-2")
 		seccion.prepend(divImg);
-		var image =$("<img>").addClass("img-responsive").attr("src", "img/circulo.png");
+		var image =$("<img>").addClass("img-responsive").attr("src", "img/schooolbus.png");
 		divImg.prepend(image);
 		var divText=$("<div></div>").addClass("col-lg-10 col-md-10 col-sm-10");
 		seccion.append(divText);
