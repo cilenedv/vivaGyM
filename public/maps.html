@@ -5,10 +5,14 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<title>Vica GyM	</title>
-	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
+	<div class="container-foto">
+		<img src="" id="perfil">
+		<div id="nombreUsuario"></div>
+	</div>
 	<section class="section-maps">
 		<form  class="form-inline menu" method="get">
 		    <a>
@@ -25,14 +29,14 @@
 						<div class="title">Gestión de Proyectos</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2"> 
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/check.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10"> 
 								<label for="checkbox-1"> Proyectos Evaluados </label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-1"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-1">
@@ -41,18 +45,18 @@
 							<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-plus" aria-hidden="true"></span></a>
+							<a><span class="glyphicon glyphicon-plus" aria-hidden="true"  data-toggle="modal" data-target="#myModalProyecto" ></span></a>
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/chat.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10"> 
 							<label for="checkbox-2"> Estudio de Ofertas </label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-2"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-2">
@@ -66,14 +70,14 @@
 						<div class="title col-lg-12 col-md-12 col-sm-12">Gestión de Entetidades</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/oferta.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10">
 								<label for="checkbox-3">Ofertas </label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true" ></span></a>
+							<a id="list-3"><span class="glyphicon glyphicon-th-list list" aria-hidden="true" ></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-3">
@@ -86,14 +90,14 @@
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/servicios.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10">
 								<label for="checkbox-4">Servicios</label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-4"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-4">
@@ -106,14 +110,14 @@
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/transporte.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10">
 								<label for="checkbox-5">Transporte</label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-5"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-5">
@@ -126,14 +130,14 @@
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2"> 
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/zonas.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10"> 
 								<label for="checkbox-6"> Zonas</label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-6"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-6">
@@ -146,14 +150,14 @@
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/uni.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10">
 								<label for="checkbox-7">Universidades</label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-7"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-7">
@@ -166,14 +170,14 @@
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/seguridad.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10">
 								<label for="checkbox-8">Comisarias</label>
-								</div>
+							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-8"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-8">
@@ -186,14 +190,14 @@
 						</div>
 						<div class="col-lg-7 col-md-7 col-sm-7">
 							<div class="col-lg-2 col-md-2 col-sm-2">
-								<img class="img-responsive" src="img/circulo.png" alt="">
+								<img class="img-responsive" src="img/comercial.png" alt="">
 							</div>
 							<div class="col-lg-10 col-md-10 col-sm-10">
 								<label for="checkbox-9">Centros Comerciales</label>
 							</div>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
-							<a><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
+							<a id="list-9"><span class="glyphicon glyphicon-th-list list" aria-hidden="true"></span></a>
 						</div>
 						<div class="col-lg-1 col-md-1 col-sm-1">
 							<input type="checkbox" id="checkbox-9">
@@ -787,295 +791,374 @@
 		  </div>
 		</div>
 	</section >
-		<section class="container-fluid container-lista-entidades">
-		<div class="row lista-entidades">
-			<div class="row">
-				<div class="col-md-3">
+	<section id="ventanaProyecto">	
+		<div class="modal fade" id="myModalProyecto" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog espacio contenedor-informacion" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title text-center" id="myModalLabel">Información del Proyecto</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="container-fluid">
+		        	<div class="row">
+		        		<div class="col-md-6">
+		        			<ul>
+		        				<li>
+		        					Nombre del Proyecto 
+		        					<input type="text" name="name" class="input-first-column entidades" id="name">
+		        				</li>
+		        				<li>
+		        					Dirección <br>
+		        					<input type="text" name="direccion" class="input-first-column entidades" id="direccion">
+		        				</li>
+		        				<li>
+		        					Estado del Proyecto
+		        					<div>
+			        					<select name="estado" class="entidades">
+													<option value='0' id="select1">---Ninguno---</option>
+													<option value='1' >opcion 1</option>
+												</select>
+											</div>
+		        				</li>
+		        				<li>
+		        					Ubicación
+		        					<div>
+			        					<select name="ubicacion" class="entidades">
+													<option value='0' id="select2">---Ninguno---</option>
+													<option value='1'>opcion 1</option>
+												</select>
+											</div>
+		        				</li>
+		        				<li>
+		        					Con vista a
+		        					<div>
+			        					<select name="ubicacion" class="entidades">
+													<option value='0' id="select3">---Ninguno---</option>
+													<option value='1'>opcion 1</option>
+												</select>
+											</div>
+		        				</li>
+		        				<li>
+		        					Contacto <br>
+		        					<input type="text" name="contacto" class="input-first-column entidades" id="contacto">
+		        				</li>
+		        			</ul>
+		        		</div>
+		        		<div class="col-md-6">
+		        			<ul class="lista-second-column">
+		        				<li>
+		        					Fecha de inicio de ventas
+											<div class="input-group input-second-column">
+												<input type="text" class="form-control entidades" placeholder="Username" aria-describedby="basic-addon1">
+											  <span class="input-group-addon" id="basic-addon1">@</span>
+											</div>
+		        				</li>
+		        				<li>
+		        					Fecha de iniciio de obra
+		        					<div class="input-group input-second-column">
+												<input type="text" class="form-control entidades" placeholder="Username" aria-describedby="basic-addon1">
+											  <span class="input-group-addon" id="basic-addon1">@</span>
+											</div>
+		        				</li>
+		        				<li>
+		        					Fecha de entrega
+		        					<div class="input-group input-second-column">
+												<input type="text" class="form-control entidades" placeholder="Username" aria-describedby="basic-addon1">
+											  <span class="input-group-addon" id="basic-addon1">@</span>
+											</div>
+		        				</li>
+		        				<li>
+		        					Empresa <br>
+		        					<input type="text" name="empresa" class="input-first-column entidades">
+		        				</li>
+		        				<li>
+		        					Página Web <br>
+		        					<input type="text" name="pagina" class="input-first-column entidades">
+		        				</li>
+		        			</ul>
+		        		</div>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Guardar y nuevo</button>
+		        <button type="button" class="btn btn-primary" id="guardar">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section>
+	<section class="container-fluid container-lista-entidades">
+		<div class="row row-lista">
+			<div class="encabezado-lista-entidades">
 				<div class="row">
-					<div class="col-md-2">
-						<i class="glyphicon glyphicon-apple"></i>
-					</div>
-					<div class="col-md-10">
-						REGISTRO MASIVO
-						<div class="btn-group">
-  							<button class="btn btn-lg dropdown-toggle btn-proyects" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Proyectos Evaluados<span class="caret drop-list-ent"></span>
+					<div class="col-md-3">
+						<div class="col-md-2">
+							<i class="glyphicon glyphicon-briefcase btn-lg"></i>
+						</div>
+						<div class="col-md-10">
+							REGISTRO MASIVO
+  							<button class="btn btn-lg dropdown-toggle btn-proyects" type="button" data-toggle="dropdown" data-target="lapiz" aria-haspopup="true" aria-expanded="false">Proyectos Evaluados<span class="caret drop-list-ent"></span>
   							</button>
-  							<ul class="dropdown-menu">
-    							<li><a href="#">uno</a></li>
-    							<li><a href="#">dos</a></li>
-    							<li><a href="#">tres</a></li>
-  							</ul>
+						</div>
+					</div>
+					<div class="col-md-9 text-right">
+						<div class="btn btn-default btn-sm">Nuevo</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-4 fecha-registro">5 elementos.Última actualización <span id="fechaEditar"></span> a las <span id="horaEditada"></span>
+					</div>
+					<div class="col-md-8 text-right">
+						<button class="glyphicon glyphicon-repeat btn btn-default dropdown-toggle btn-config-edit" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
+						</button>
+						<button class="glyphicon glyphicon-pencil btn btn-default dropdown-toggle btn-config-edit" id="editar-lista-entidades" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+			<div class="celdas-lista-ent">
+				<div class="row">
+					<div class="col-md-1"></div>
+					<div class="col-md-3">NOMBRE DEL PROYECTO</div>
+					<div class="col-md-2">ESTADO DEL PROYECTO</div>
+					<div class="col-md-2">UBICACION</div>
+					<div class="col-md-2">FECHA DE ENTREGA</div>
+					<div class="col-md-2">EMPRESA</div>												
+				</div>
+				<div class="row">
+					<div class="col-md-1 text-center text-center">1</div>
+					<div class="col-md-3">
+						<div class="col-md-10 np-list">
+							Acme-130 Widgets (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Acme (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Closed Lost
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							12/19/2015
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-9">
+							AGaII
+						</div>
+						<div class="col-md-3">
+							<span class="caret"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 text-center">2</div>
+					<div class="col-md-3">
+						<div class="col-md-10 np-list">
+							Acme-130 Widgets (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Acme (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Qualification
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							12/19/2015
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-9">
+							AGaII
+						</div>
+						<div class="col-md-3">
+							<span class="caret"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 text-center">3</div>
+					<div class="col-md-3">
+						<div class="col-md-10 np-list">
+							Acme-130 Widgets (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Acme (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Qualification
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							12/19/2015
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-9">
+							AGaII
+						</div>
+						<div class="col-md-3">
+							<span class="caret"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 text-center">4</div>
+					<div class="col-md-3">
+						<div class="col-md-10 np-list">
+							Acme-130 Widgets (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Acme (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Needs Analysis
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							12/19/2015
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-9">
+							AGaII
+						</div>
+						<div class="col-md-3">
+							<span class="caret"></span>
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-1 text-center">5</div>
+					<div class="col-md-3">
+						<div class="col-md-10 np-list">
+							Acme-130 Widgets (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Acme (Sample)
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							Closed Won
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-10 np-list">
+							12/19/2015
+						</div>
+						<div class="col-md-2 lap-editor edit-hidden">
+							<button class="glyphicon glyphicon-pencil"></button>
+						</div>
+					</div>
+					<div class="col-md-2">
+						<div class="col-md-9">
+							AGaII
+						</div>
+						<div class="col-md-3">
+							<span class="caret"></span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<div class="col-md-9 text-right">
-				<div class="btn btn-default btn-sm">Nuevo</div>
+			<div class="row text-center list-ent-btn">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				<button type="button" class="btn btn-primary">Guardar</button>
 			</div>
-			</div>
+		</section>
+		<div class="section con-mapa">
+	    	<div class="mapa" id="mapa"></div>
 		</div>
-		<div class="row lista-entidades fecha">
-			<div class="col-md-4">5 elementos.Última actualización <label>relleno</label> a las <label>relleno</label>
-			</div>
-			<div class="col-md-8 text-right">
-				<div class="btn-group">
-					<button class="glyphicon glyphicon-repeat btn btn-default dropdown-toggle" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu">
- 						<li><a href="#">uno</a></li>
-    					<li><a href="#">dos</a></li>
-    					<li><a href="#">tres</a></li>
-  					</ul>
-				</div>
-				<div class="btn-group">
-					<button class="glyphicon glyphicon-pencil btn btn-default dropdown-toggle" id="editar-lista-entidades" type="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="caret"></span>
-					</button>
-					<ul class="dropdown-menu">
- 						<li><a href="#">uno</a></li>
-    					<li><a href="#">dos</a></li>
-    					<li><a href="#">tres</a></li>
-  					</ul>
-				</div>
-			</div>
-		</div>
-		<div class="celdas-lista-ent">
-			<div class="row">
-				<div class="col-md-1"></div>
-				<div class="col-md-3">NOMBRE DEL PROYECTO</div>
-				<div class="col-md-2">ESTADO DEL PROYECTO</div>
-				<div class="col-md-2">UBICACION</div>
-				<div class="col-md-2">FECHA DE ENTREGA</div>
-				<div class="col-md-2">EMPRESA</div>												
-			</div>
-			<div class="row">
-				<div class="col-md-1 text-center text-center">1</div>
-				<div class="col-md-3">
-					<div class="col-md-10 np-list">
-						Acme-130 Widgets (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Acme (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Closed Lost
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						12/19/2015
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-9">
-						AGaII
-					</div>
-					<div class="col-md-3">
-						<span class="caret"></span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-1 text-center">2</div>
-				<div class="col-md-3">
-					<div class="col-md-10 np-list">
-						Acme-130 Widgets (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Acme (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Qualification
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						12/19/2015
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-9">
-						AGaII
-					</div>
-					<div class="col-md-3">
-						<span class="caret"></span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-1 text-center">3</div>
-				<div class="col-md-3">
-					<div class="col-md-10 np-list">
-						Acme-130 Widgets (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Acme (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Qualification
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						12/19/2015
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-9">
-						AGaII
-					</div>
-					<div class="col-md-3">
-						<span class="caret"></span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-1 text-center">4</div>
-				<div class="col-md-3">
-					<div class="col-md-10 np-list">
-						Acme-130 Widgets (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Acme (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Needs Analysis
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						12/19/2015
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-9">
-						AGaII
-					</div>
-					<div class="col-md-3">
-						<span class="caret"></span>
-					</div>
-				</div>
-			</div>
-			<div class="row">
-				<div class="col-md-1 text-center">5</div>
-				<div class="col-md-3">
-					<div class="col-md-10 np-list">
-						Acme-130 Widgets (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Acme (Sample)
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						Closed Won
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-10 np-list">
-						12/19/2015
-					</div>
-					<div class="col-md-2 lap-editor edit-hidden">
-						<button class="glyphicon glyphicon-pencil"></button>
-					</div>
-				</div>
-				<div class="col-md-2">
-					<div class="col-md-9">
-						AGaII
-					</div>
-					<div class="col-md-3">
-						<span class="caret"></span>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="row text-center list-ent-btn">
-			<button type="button" class="btn btn-default">Cancelar</button>
-			<button type="button" class="btn btn-primary">Guardar</button>
-		</div>
-	</section>
-	<div class="section con-mapa">
-	    <div class="mapa" id="mapa"></div>
-	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/maps.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/data.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/validar-informacion.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script type="text/javascript" src="js/logueo.js"></script>
 	<script src="js/validarentidades.js" type="text/javascript" charset="utf-8" async defer></script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAcboV2D8C8tqLSDGNmHlt5xiib0nqxD2Q" async defer></script> 
 </body>

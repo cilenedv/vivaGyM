@@ -47,7 +47,7 @@ $(function() {
       FB.api('/me', function(response) {
         localStorage.setItem("nombre",response.name);
         localStorage.setItem("src",'http://graph.facebook.com/'+response.id+'/picture?type=large');  
-        window.location='mapita.html';
+        window.location='maps.html';
       });
     }
 

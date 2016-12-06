@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+
 #logo{
 	width: 31%;
   margin-top: 15%;
@@ -8,6 +10,25 @@
   border: 1px solid orange !important;
   width: 28%;
   font-size: 20px;
+}
+.container-foto{
+	position: absolute;
+    top: 9px;
+    z-index: 30;
+    right: 0px;
+    text-align: center;
+}
+#perfil{
+	border-radius: 100%;
+    height: 111px;
+	width: 58%;
+}
+#nombreUsuario{
+	background: #B2BABB;
+    color: white;
+    border-radius: 5px;;
+    color: white;
+    border-radius: 5px;
 }
 /*  uniendo*/
 
@@ -23,7 +44,7 @@
 
 .menu{
 	position: absolute;
-	border-radius: 6%;
+	border-radius: 10px;
 	z-index: 1;
 	background: #fff;
 	padding: 1%;
@@ -54,11 +75,18 @@
 	color: #000;
 }
 
+#slide label{
+	margin-top: 7px;
+	font-weight: 500;
+	font-family: 'Raleway', sans-serif;
+}
+
 .title{
 	font-size: 1.3em;
 	font-weight: bold;
 }
 #slide{
+	width: 100%;
 	display: none;
 	padding: 1%;
 	margin-top: 19%;
@@ -67,11 +95,15 @@
     position: absolute;
     z-index: 2;
 	overflow-x: hidden;
-	overflow-y: scroll; 
-	max-height: 550px;
+	overflow-y: scroll;
+	height: 550px; 
+}
+.reducir{
+	max-height: 290px;
 }
 #slide div{
 	padding: 1%;
+	font-family: 'Raleway', sans-serif;
 }
 .divide{
 	border-top: 1px solid black
@@ -105,6 +137,10 @@ section .crear .row{
 	width: 60% !important;
 	margin-left: 35% !important;
 }
+.espacio{
+	width:75% !important;
+	margin-left:25% !important;
+}
 .entidades{
 	border-radius: 4px;
     height: 35px;
@@ -123,6 +159,7 @@ section .crear .row{
     width: 100%;
     background: white;
     z-index: 30;
+    display: none;
 }
 section .lista-entidades{
     padding: 1.5%;
@@ -177,5 +214,9 @@ outline:none;
 	padding: 5px 15px;
     border: 1px solid black;
     box-shadow: inset 0px 0px 5px blue;
+}
+.row-lista{
+	margin-right: 0;
+	margin-left: 0;
 }
 

@@ -48,7 +48,7 @@ $(document).ready(function (){
 		$("#insert").append(seccion);
 		var divImg=$("<div></div>"). addClass("col-lg-2 col-md-2 col-sm-2")
 		seccion.prepend(divImg);
-		var image =$("<img>").addClass("img-responsive").attr("src", "img/circulo.png");
+		var image =$("<img>").addClass("img-responsive").attr("src", "img/schooolbus.png");
 		divImg.prepend(image);
 		var divText=$("<div></div>").addClass("col-lg-10 col-md-10 col-sm-10");
 		seccion.append(divText);
@@ -56,7 +56,7 @@ $(document).ready(function (){
 		divText.append(textName);
 		var diconoUno =$("<div></div>").addClass("col-lg-1 col-md-1 col-sm-1");
 		$("#insert").append(diconoUno);
-		var ancorUno =$("<a></a>");
+		var ancorUno =$("<a></a>").attr("id","list-"+contador);
 		diconoUno.append(ancorUno);
 		var spanUno= $("<span></span>").addClass("glyphicon glyphicon-th-list list").attr("aria-hidden","true");
 		ancorUno.append(spanUno);
@@ -80,8 +80,17 @@ $(document).ready(function (){
 		var spanTres= $("<span></span>").addClass("glyphicon glyphicon-plus").attr("aria-hidden","true").attr("id", "agregar-" + contador).attr("data-target" , "#myModal-"+ contador).attr("data-toggle","modal");
 		ancorTres.append(spanTres);
 	};
-
+	// lista
+	$(".list").click(function(){
+		$(".container-lista-entidades").toggleClass("show");
+		$("#slide").toggleClass("reducir");
+	});
+	$('.dropdown-toggle').dropdown();
+	editarLista();
 });
+
+// function dropdown
+
 // function dropdown
 
 $('.dropdown-toggle').dropdown();
@@ -90,12 +99,15 @@ var editarLista = function(){
 	$("#editar-lista-entidades").click(botonLapiz);
 	$(".lap-editor").click(lapizEditor);
 	$(".np-list").keypress(guardadoEditado);
+	$(".np-list").keypress(horaEditar);
+	$(".np-list").keypress(fechaEditar);
+	$(".save").click(salirEdicion);	
 }
 
 $(document).ready(editarLista);
 
 var botonLapiz = function(){
-	var btnEditNombre = $(".lap-editor").toggle();
+	var btnEditNombre = $(".lap-editor");
 	var i;
     for (i = 0; i < $(btnEditNombre).length; i++) {
       	$(btnEditNombre)[i].classList.remove("edit-hidden");
@@ -118,6 +130,31 @@ var guardadoEditado = function(e){
 		$(this).parent().removeClass("inputCajaEdit");	
 	}
 }
+
+var horaEditar = function(){
+	var fecha = new Date().toLocaleTimeString();
+	$("#horaEditada").text(fecha);
+}
+
+var fechaEditar = function(){
+    	var d = new Date();
+    	var day = d.getDate();
+    	var month = d.getMonth() + 1;
+    	var year = d.getFullYear();
+    	if (day < 10) {
+        	day = "0" + day;
+    	}
+    	if (month < 10) {
+        	month = "0" + month;
+    	}
+    	var date = day + "/" + month + "/" + year;
+	$("#fechaEditar").text(date);
+}
+
+var salirEdicion = function(){
+	$(".lap-editor").addClass("edit-hidden");
+}
+
 
 
 
