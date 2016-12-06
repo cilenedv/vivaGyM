@@ -5,8 +5,9 @@ function validacionOferta() {
   var longitud=$("#longitudOferta").val();
   var regexNombre = /^[a-zñáéíóúü]+$/gi;
   var regexDireccion = /^[a-zñáéíóúü]+$/gi;
-  var regexLatitud=/^\d*\.?\d*$/;
-  var regexLongitud=/^\d*\.?\d*$/;
+  var regexLatitud=/^-?\d*\.?\d*$/;
+  var regexLongitud=/^-?\d*\.?\d*$/;
+
 
 
  if (nombre.split(' ').join('').length == 0 || direccion.split(' ').join('').length == 0 ||  latitud.length == 0 || longitud.length==0) {
@@ -57,8 +58,8 @@ function validacionZona() {
   var longitud=$("#longitudZona").val();
   var regexNombre = /^[a-zñáéíóúü]+$/gi;
   var regexDireccion = /^[a-zñáéíóúü]+$/gi;
-  var regexLatitud=/^\d*\.?\d*$/;
-  var regexLongitud=/^\d*\.?\d*$/;
+  var regexLatitud=/^-?\d*\.?\d*$/;
+  var regexLongitud=/^-?\d*\.?\d*$/;
 
 
  if (nombre.split(' ').join('').length == 0 || direccion.split(' ').join('').length == 0 ||  latitud.length == 0 || longitud.length==0) {
@@ -94,7 +95,7 @@ $("#nuevo-Zona").click(function(evento){
     $("#latitudZona").val("");
     $("#longitudZona").val("");
 });
-$("#agregar").click(function(evento){
+$("#agregarZona").click(function(evento){
     $("#nombreZona").val("");
     $("#direccionZona").val("");
     $("#latitudZona").val("");
@@ -110,8 +111,8 @@ function validacionComisaria() {
   var longitud=$("#longitudComisaria").val();
   var regexNombre = /^[a-zñáéíóúü]+$/gi;
   var regexDireccion = /^[a-zñáéíóúü]+$/gi;
-  var regexLatitud=/^\d*\.?\d*$/;
-  var regexLongitud=/^\d*\.?\d*$/;
+  var regexLatitud=/^-?\d*\.?\d*$/;
+  var regexLongitud=/^-?\d*\.?\d*$/;
 
 
  if (nombre.split(' ').join('').length == 0 || direccion.split(' ').join('').length == 0 ||  latitud.length == 0 || longitud.length==0) {
@@ -147,7 +148,7 @@ $("#nuevo-Comisaria").click(function(evento){
     $("#latitudComisaria").val("");
     $("#longitudComisaria").val("");
 });
-$("#agregar").click(function(evento){
+$("#agregarComisaria").click(function(evento){
     $("#nombreComisaria").val("");
     $("#direccionComisaria").val("");
     $("#latitudComisaria").val("");
@@ -163,8 +164,8 @@ function validacionComercial() {
   var longitud=$("#longitudComercial").val();
   var regexNombre = /^[a-zñáéíóúü]+$/gi;
   var regexDireccion = /^[a-zñáéíóúü]+$/gi;
-  var regexLatitud=/^\d*\.?\d*$/;
-  var regexLongitud=/^\d*\.?\d*$/;
+  var regexLatitud=/^-?\d*\.?\d*$/;
+  var regexLongitud=/^-?\d*\.?\d*$/;
 
 
  if (nombre.split(' ').join('').length == 0 || direccion.split(' ').join('').length == 0 ||  latitud.length == 0 || longitud.length==0) {
@@ -200,7 +201,7 @@ $("#nuevo-Comercial").click(function(evento){
     $("#latitudComercial").val("");
     $("#longitudComercial").val("");
 });
-$("#agregar").click(function(evento){
+$("#agregarComercial").click(function(evento){
     $("#nombreComercial").val("");
     $("#direccionComercial").val("");
     $("#latitudComercial").val("");
