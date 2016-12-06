@@ -20,12 +20,6 @@ var cargaExitosa = function(posicion) {
     
     var mostrarMap = new google.maps.Map(document.getElementById('mapa'), myOptions);
 
-  /*  var marker = new google.maps.Marker({
-        position:latlon,
-        map:mostrarMap,
-        title:"Mapa"
-    });*/
-
     var iconBase = "img/";
     var marker = new google.maps.Marker({
     position: latlon,
@@ -53,10 +47,11 @@ var geocodeResult= function(results, status) {
         };
         map = new google.maps.Map($(".mapa").get(0), mapOptions);
         map.fitBounds(results[0].geometry.viewport);
-        var markerOptions = { position: results[0].geometry.location }
+        var iconBase1 = "img/";
+        var markerOptions = { position: results[0].geometry.location, icon: iconBase1 + 'circulo.png' }
         var marker = new google.maps.Marker(markerOptions);
         marker.setMap(map);
-        icon: iconBase + 'user.png';
+        
     } else {
 
         alert("Geocoding no tuvo éxito debido a: " + status);
