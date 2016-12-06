@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 *{
 	margin: 0;
 	padding: 0;
@@ -102,3 +103,61 @@ section .crear .row{
 .glyphicon{
 	cursor: pointer;
 }
+
+/*Lista de entidades*/
+
+section .lista-entidades{
+    padding: 1.5%;
+    padding-bottom: 0;
+    background: #f7f9f9;
+}
+
+.lista-entidades.fecha{
+	padding-bottom: 15px;
+}
+
+.btn-proyects{
+    background: transparent;
+    padding-left: 0!important;
+    padding-top: 0!important;	
+}
+
+span.caret.drop-list-ent {
+    margin-left: 5%;	
+}
+
+.celdas-lista-ent{
+	padding-top: 1%;
+	font-size: 12px;
+}
+
+
+.celdas-lista-ent .row{
+    padding-top: 5px;
+    border-bottom: 1px solid #f7f9f9;
+}
+
+.list-ent-btn{
+	padding-top: 20px;
+}
+
+.col-md-10.np-list{
+	padding:0;
+}
+
+.edit-hidden{
+	display: none;
+}
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+border:none;
+outline:none;
+}
+
+.inputCajaEdit{
+	padding: 5px 15px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 5px blue;
+}
+
