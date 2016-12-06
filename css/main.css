@@ -83,3 +83,22 @@ section .crear label{
 section .crear .row{
 	padding: 5px;
 }
+.scroll{
+	max-height:300px;
+	overflow-x: hidden;
+	overflow-y: scroll; 
+}
+.modalEstilos{
+	width: 60% !important;
+	margin-left: 35% !important;
+}
+.entidades{
+	border-radius: 4px;
+    height: 35px;
+    margin: 7px 0px;
+    width: 325px;
+    border:1px solid #D8D8D8;
+}
+.glyphicon{
+	cursor: pointer;
+}
