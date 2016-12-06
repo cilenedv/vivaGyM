@@ -39,7 +39,7 @@ Slack como canal interno del equipo para el envio de archivos y/o comunicación 
 
 Trello para el marcaje de los objetivos personales y tareas que llevarian cada uno de estos, esto con el fin de aligerar y dinamizar los trabajos, dando control de tiempos y evitar el encasillamiento en alguno de ellos.
 
-:![Sin titulo](readme-img/trello.png):
+:![Sin titulo](<a href="http://tinypic.com?ref=p8x1w" target="_blank"><img src="http://i66.tinypic.com/p8x1w.png" border="0" alt="Image and video hosting by TinyPic"></a>):
 
 Heroku nos sirvio como plataforma para visualizar nuestra página de manera pública ya que esta maneja datos de acceso con facebook.
 
