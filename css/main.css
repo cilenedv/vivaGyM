@@ -6,6 +6,13 @@ section .lista-entidades{
     background: #f7f9f9;
 }
 
+.lista-entidades i{
+	padding: 6.8px 10px;
+    background: red;
+    border-radius: 50%;
+    color: white;	
+}
+
 .lista-entidades.fecha{
 	padding-bottom: 15px;
 }

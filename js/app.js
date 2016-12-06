@@ -39,18 +39,10 @@ var guardadoEditado = function(e){
 
 var horaEditar = function(){
 	var fecha = new Date().toLocaleTimeString();
-	// var hora = fecha.getHours();
-	// var minuto = fecha.getMinutes();
-	// if (minuto < 10) {
-	// minuto = "0" + minuto;
-	// 		}
-	// var horaImprimible = hora + " : " + minuto;
 	$("#horaEditada").text(fecha);
-    // contenedor.insertBefore(horario, contenedor.childNodes[0]).classList.add("horaBox");
 }
 
 var fechaEditar = function(){
-	// $.date = function(dateObject) {
     	var d = new Date();
     	var day = d.getDate();
     	var month = d.getMonth() + 1;
@@ -62,8 +54,6 @@ var fechaEditar = function(){
         	month = "0" + month;
     	}
     	var date = day + "/" + month + "/" + year;
-		// return date;
-	// }
 	$("#fechaEditar").text(date);
 }
 
