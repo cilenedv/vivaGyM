@@ -6,7 +6,6 @@
 	<title>Vica GyM	</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap.css">
-	<link rel="stylesheet" href="css/bootstrap-theme.css">
 </head>
 <body>
 	<div class="container-fluid">
@@ -172,12 +171,12 @@
 					<div class="divide col-lg-12 col-md-12 col-sm-12">
 					</div>
 					<div class="col-lg-12 col-md-12 col-sm-12">
-						<a id="crear"> Parámetros y Mantenimientos. </a>
+						<a id="cuadro" aria-hidden="true" data-toggle="modal" data-target="#modulo"> Parámetros y Mantenimientos. </a>
 					</div>
 				</div>
 			</div>
-			<div class="col-lg-8">
-				<div class="Crear">
+			<section>
+				<div class="crear col-lg-7">
 					<p class="title"> Crear Entidad de Geolocalizacón</p>
 					<div class="divide col-lg-12 col-md-12">
 					</div>
@@ -189,51 +188,101 @@
 						</label>
 						</div>
 					</div>
-					<div class="row">
+					<div class="row center-block">
 						<div class="col-lg-6 col-md-6">
 							<div class="col-lg-6 col-md-6">
 								<label>
-							 	Nombre de Atributos
-								<input type="text" class="form-control col-lg-12" placeholder="Text input">
-								</label>	
+							 	Nombre de Atributos</label>
+								<input type="text" class="form-control " placeholder="Text input">
+									
 							</div>
 							<div class="col-lg-6 col-md-6">
 								<label>
-							 	Nombre de Etiquetas
-								<input type="text" class="form-control col-lg-12" placeholder="Text input">
-								</label>	
+							 	Nombre de Etiquetas </label>
+								<input type="text" class="form-control" placeholder="Text input">
 							</div>
 						</div>
 						<div class="col-lg-6 col-md-6">
 							<div class="col-lg-4 col-md-4">
-								<label for="">
+								<label for=""> Tipo de datos </label>
 									<select class="form-control">
 									  <option>String</option>
 									  <option>Entero</option>
 									  <option>Img</option>
 									</select>
-								</label>
 							</div>
 							<div class="col-lg-4 col-md-4">
 								<label>
-								Acepta Vacios
+								Acepta Vacios</label> <br>
     								<input type="checkbox" id="check-1" value="option1" aria-label="...">
-  								</label>
 							</div>
 							<div class="col-lg-4 col-md-4">
 								<label>
-							Identificador
+							Identificador</label><br>
 							    <input type="checkbox" id="chek-2" value="option1" aria-label="...">
-							  </label>
 							</div>
 						</div>
-					</div>			
+					</div>
+					<div class="row center-block">
+						<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6">
+								<input type="text" class="form-control " placeholder="Text input">		
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<input type="text" class="form-control" placeholder="Text input">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="col-lg-4 col-md-4">		
+								<select class="form-control">
+								  <option>String</option>
+								  <option>Entero</option>
+								  <option>Img</option>
+								</select>
+							</div>
+							<div class="col-lg-4 col-md-4">
+    							<input type="checkbox" id="check-1" value="option1" aria-label="...">
+							</div>
+							<div class="col-lg-4 col-md-4">
+							    <input type="checkbox" id="chek-2" value="option1" aria-label="...">
+							</div>
+						</div>
+					</div>
+					<div class="row center-block">
+						<div class="col-lg-6 col-md-6">
+							<div class="col-lg-6 col-md-6">
+								<input type="text" class="form-control " placeholder="Text input">		
+							</div>
+							<div class="col-lg-6 col-md-6">
+								<input type="text" class="form-control" placeholder="Text input">
+							</div>
+						</div>
+						<div class="col-lg-6 col-md-6">
+							<div class="col-lg-4 col-md-4">		
+								<select class="form-control">
+								  <option>String</option>
+								  <option>Number</option>
+								  <option>File</option>
+								</select>
+							</div>
+							<div class="col-lg-4 col-md-4">
+    							<input type="checkbox" id="check-1" value="option1" aria-label="...">
+							</div>
+							<div class="col-lg-4 col-md-4">
+							    <input type="checkbox" id="chek-2" value="option1" aria-label="...">
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal" id="closed">Cerrar</button>
+				        <button  type="button" class="btn btn-primary">Guardar y nuevo</button>
+				        <button type="button" class="btn btn-primary">Guardar</button>
+				    </div>
 				</div>
-			</div>
+			</section>
 		</div>
 	</div>
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="js/bootstrap.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>

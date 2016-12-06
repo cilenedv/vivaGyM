@@ -22,3 +22,15 @@
 .show{
 	display: block;
 }
+section .crear{
+	margin: 2%;
+	padding: 1%;
+	border-radius: 10px;
+	display: none;
+}
+section .crear label{
+	font-size: 10px;
+} 
+section .crear .row{
+	padding: 5px;
+}
