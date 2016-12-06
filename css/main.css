@@ -105,7 +105,13 @@ section .crear .row{
 }
 
 /*Lista de entidades*/
-
+.container-lista-entidades{
+	bottom: 0;
+    position: absolute;
+    width: 100%;
+    background: white;
+    z-index: 30;
+}
 section .lista-entidades{
     padding: 1.5%;
     padding-bottom: 0;
