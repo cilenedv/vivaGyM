@@ -77,7 +77,7 @@ $(document).ready(function (){
 		$("#insert").append(diconoTres);
 		var ancorTres =$("<a></a>");
 		diconoTres.append(ancorTres);
-		var spanTres= $("<span></span>").addClass("glyphicon glyphicon-plus").attr("aria-hidden","true").attr("id", "agregar-" + contador);
+		var spanTres= $("<span></span>").addClass("glyphicon glyphicon-plus").attr("aria-hidden","true").attr("id", "agregar-" + contador).attr("data-target" , "#myModal-"+ contador).attr("data-toggle","modal");
 		ancorTres.append(spanTres);
 	};
 

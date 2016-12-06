@@ -264,9 +264,9 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="col-lg-4 col-md-4">		
 								<select class="form-control" id="selectData-2">
-								  <option>String</option>
-								  <option>Number</option>
-								  <option>File</option>
+								  <option value="0">String</option>
+								  <option value="1">Number</option>
+								  <option value="2">File</option>
 								</select>
 							</div>
 							<div class="col-lg-4 col-md-4">
@@ -289,9 +289,9 @@
 						<div class="col-lg-6 col-md-6">
 							<div class="col-lg-4 col-md-4">		
 								<select class="form-control" id="selectData-3">
-								  <option>String</option>
-								  <option>Number</option>
-								  <option>File</option>
+								  <option value="0">String</option>
+								  <option value="1">Number</option>
+								  <option value="2">File</option>
 								</select>
 							</div>
 							<div class="col-lg-4 col-md-4">
@@ -310,7 +310,57 @@
 				</div>
 			</section>
 			<section>
-				
+				<div class="modal fade" id="myModal-10" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+				  <div class="modal-dialog" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				        <h4 class="modal-title" id="myModalLabel">Centros Comerciales</h4>
+				      </div>
+				      <div class="modal-body">
+					      <form action="">
+					     	<div class="row">
+					     		<div class="col-md-12">
+					      			<label for=""><span>*</span> Nombre</label>
+					      			<input id="nombre-colegio" type="text">
+					      		</div>
+					     	</div>
+					      	<div class="row">
+					      		<div class="col-md-12">
+					      			<label for=""><span>*</span> Dirección</label>
+					      			<input id="direccion-colergio" type="text">
+					      		</div>
+					      	</div>
+					      	<div class="row">
+					      		<div class="col-md-12">
+					      			<label for=""><span>*</span> Longitud</label>
+					      			<input id="longitud-colegio" type="text">
+					      		</div>
+					      		<div class="col-md-12">
+					      			<label for=""><span>*</span> Latitud</label>
+					      			<input id="latitud-clegio" type="text">
+					      		</div>
+					      	</div>
+					      	<div class="row">
+					      		<div class="col-md-12">
+					      			<label for=""><span>*</span>Aforo</label>
+					      			<input id="aforo-colegio" type="text">
+					      		</div>
+					      		<div class="col-md-12">
+					      			<label for=""><span>*</span> Imagen</label>
+					      			<input id="latitud-clegio" type="file">
+					      		</div>
+					      	</div>
+					      </form>
+				      </div>
+				      <div class="modal-footer">
+				        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+				        <button id="nuevo-universidad" type="button" class="btn btn-primary">Guardar y nuevo</button>
+				        <button id="guardar-universidad" type="button" class="btn btn-primary">Guardar</button>
+				      </div>
+				    </div>
+				  </div>
+				</div>
 			</section>
 		</div>
 	</div>
