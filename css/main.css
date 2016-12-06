@@ -110,7 +110,8 @@ section .crear .row{
     position: absolute;
     width: 100%;
     background: white;
-    z-index: 30;
+    z-index: 3;
+    display: none;
 }
 section .lista-entidades{
     padding: 1.5%;

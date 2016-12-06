@@ -82,6 +82,12 @@ $(document).ready(function (){
 	};
 
 });
+
+// lista
+$(".list").click(function(){
+	$(".container-lista-entidades").toggleClass("show");
+});
+
 // function dropdown
 
 $('.dropdown-toggle').dropdown();
