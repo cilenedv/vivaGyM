@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/informacion.css">
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<body>
+	<!-- Button trigger modal -->
+		<div class="container-foto">
+			<img src="" id="perfil">
+			<div id="nombreUsuario"></div>
+		</div>
+		<a href="#" class="btn btn-primary btn-lg" data-toggle="modal" data-target="#myModal">
+		  Launch demo modal
+		</a>
+		<!-- Modal -->
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog contenedor-informacion" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title text-center" id="myModalLabel">Información del Proyecto</h4>
+		      </div>
+		      <div class="modal-body">
+		        <div class="container-fluid">
+		        	<div class="row">
+		        		<div class="col-md-6">
+		        			<ul>
+		        				<li>
+		        					Nombre del Proyecto 
+		        					<input type="text" name="name" class="input-first-column" id="name">
+		        				</li>
+		        				<li>
+		        					Dirección
+		        					<input type="text" name="direccion" class="input-first-column" id="direccion">
+		        				</li>
+		        				<li>
+		        					Estado del Proyecto
+		        					<div>
+			        					<select name="estado">
+													<option value='0' id="select1">---Ninguno---</option>
+													<option value='1' >opcion 1</option>
+												</select>
+											</div>
+		        				</li>
+		        				<li>
+		        					Ubicación
+		        					<div>
+			        					<select name="ubicacion">
+													<option value='0' id="select2">---Ninguno---</option>
+													<option value='1'>opcion 1</option>
+												</select>
+											</div>
+		        				</li>
+		        				<li>
+		        					Con vista a
+		        					<div>
+			        					<select name="ubicacion">
+													<option value='0' id="select3">---Ninguno---</option>
+													<option value='1'>opcion 1</option>
+												</select>
+											</div>
+		        				</li>
+		        				<li>
+		        					Contacto
+		        					<input type="text" name="contacto" class="input-first-column" id="contacto">
+		        				</li>
+		        			</ul>
+		        		</div>
+		        		<div class="col-md-6">
+		        			<ul class="lista-second-column">
+		        				<li>
+		        					Fecha de inicio de ventas
+											<div class="input-group input-second-column">
+												<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+											  <span class="input-group-addon" id="basic-addon1">@</span>
+											</div>
+		        				</li>
+		        				<li>
+		        					Fecha de iniciio de obra
+		        					<div class="input-group input-second-column">
+												<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+											  <span class="input-group-addon" id="basic-addon1">@</span>
+											</div>
+		        				</li>
+		        				<li>
+		        					Fecha de entrega
+		        					<div class="input-group input-second-column">
+												<input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
+											  <span class="input-group-addon" id="basic-addon1">@</span>
+											</div>
+		        				</li>
+		        				<li>
+		        					Empresa
+		        					<input type="text" name="empresa" class="input-first-column">
+		        				</li>
+		        				<li>
+		        					Página Web
+		        					<input type="text" name="pagina" class="input-first-column">
+		        				</li>
+		        			</ul>
+		        		</div>
+		        	</div>
+		        </div>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cancelar</button>
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Guardar y nuevo</button>
+		        <button type="button" class="btn btn-primary" id="guardar">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>     
+	<script type="text/javascript" src="js/jquery-3.1.0.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap.js"></script>
+	<script type="text/javascript" src="js/app.js"></script>
+	<script type="text/javascript" src=js/validar-informacion.js></script>
+</body>
+</html>
