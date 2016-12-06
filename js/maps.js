@@ -30,7 +30,7 @@ var cargaExitosa = function(posicion) {
 };
 
 var error = function (error) {
-    console.log(error);
+     console.log(error);
 };
 
 $('.search1').on('click', function() {
@@ -47,6 +47,23 @@ var geocodeResult= function(results, status) {
         };
         map = new google.maps.Map($(".mapa").get(0), mapOptions);
         map.fitBounds(results[0].geometry.viewport);
+        var contentString = '<div id="div_ejemplo">'+
+        '<p>Este es un ejemplo de <b>InfoWindow</b>, ' +
+        'como puedes ver puedes agregar cualquier cosa, ' +
+        'cualquier <em>HTML</em>.</p>' +
+        '<p>Este InfoWindow tiene un ancho de 200px ' +
+        'y autom&aacute;ticamente da los saltos de l&iacute;nea.</p>'+
+        '<a href="http://www.spsdemo.com/websites/PublishingImages/Forms/ByCreatedDate.aspx/">'+
+        '<img src="img/link.png"></a>'+
+        '<a href="">'+
+        '<img src="img/editar.png"></a>'+
+        '</div>';
+ 
+        var infowindow = new google.maps.InfoWindow({
+        content: contentString,
+        maxWidth: 200
+});
+ 
         var iconBase1 = "img/";
         var markerOptions = { position: results[0].geometry.location, icon: iconBase1 + 'circulo.png' }
         var marker = new google.maps.Marker(markerOptions);
@@ -56,6 +73,10 @@ var geocodeResult= function(results, status) {
 
         alert("Geocoding no tuvo éxito debido a: " + status);
     }
+
+    google.maps.event.addListener(marker, 'click', function() {
+    infowindow.open(map,marker);
+    });
 
 
 }
