@@ -73,7 +73,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a id="agregar"><span  class="glyphicon glyphicon-plus agregar" aria-hidden="true" data-toggle="modal" data-target="#myModalOferta"></span></a>
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7">
 						<div class="col-lg-2 col-md-2 col-sm-2">
@@ -93,7 +93,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true" data-toggle="modal" data-target="#myModalServicio"></span></a>
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7">
 						<div class="col-lg-2 col-md-2 col-sm-2">
@@ -113,7 +113,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true" data-toggle="modal" data-target="#myModalTransporte"></span></a>
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7">
 						<div class="col-lg-2 col-md-2 col-sm-2"> 
@@ -133,7 +133,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true" data-toggle="modal" data-target="#myModalZona"></span></a>
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7">
 						<div class="col-lg-2 col-md-2 col-sm-2">
@@ -153,7 +153,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true" data-toggle="modal" data-target="#myModalUniversidad"></span></a>
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7">
 						<div class="col-lg-2 col-md-2 col-sm-2">
@@ -173,7 +173,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"  data-toggle="modal" data-target="#myModalComisaria"></span></a>
 					</div>
 					<div class="col-lg-7 col-md-7 col-sm-7">
 						<div class="col-lg-2 col-md-2 col-sm-2">
@@ -193,7 +193,7 @@
 						<a><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span></a>
 					</div>
 					<div class="col-lg-1 col-md-1 col-sm-1">
-						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true"></span></a>
+						<a><span class="glyphicon glyphicon-plus agregar" aria-hidden="true" data-toggle="modal" data-target="#myModalComercial"></span></a>
 					</div>
 					<div class="divide col-lg-12 col-md-12 col-sm-12">
 					</div>
@@ -306,13 +306,425 @@
 				    </div>
 				</div>
 			</section>
-			<section>
-					
-			</section>
 		</div>
 	</div>
+	<section id="ventanaOferta">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalOferta" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Ofertas</h4>
+		      </div>
+		      <div class="modal-body">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-6">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreOferta" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionOferta" class="entidades" type="text">
+			      		</div>
+			     	</div>
+					<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudOferta" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudOferta" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-Oferta" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-Oferta" type="button " class="btn btn-primary" data-dismiss="modal2">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
+	<section id="ventanaServicio">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalServicio" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Servicios</h4>
+		      </div>
+		      <div class="modal-body scroll">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-12">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreServicio" class="entidades" type="text">
+			      		</div>
+			     	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionServicio" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Distrito</label><br>
+							<select id="distritoServicio" name="distrito" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>Ate</option>
+							</select>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Horario Atención</label><br>
+			      			<input id="horarionServicio" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Descripción de Servicio</label><br>
+			      			<input id="descripcionServicio" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span>Nombre del Contacto</label><br>
+			      			<input id="contactoServivio" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Ubicación</label><br>
+			      			<select id="ubicaciónServicio" name="ubicacion" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>opcion 1</option>
+							</select>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudServicio" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudServicio" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			     		<div class="col-md-12">
+			      			<label for=""><span>*</span> Url</label><br>
+			      			<input id="urlServicio" class="entidades" type="text">
+			      		</div>
+			     	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-Servicio" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-Servicio" type="button" class="btn btn-primary">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
+	<section id="ventanaTransporte">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalTransporte" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Transporte</h4>
+		      </div>
+		      <div class="modal-body scroll">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-12">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreTransporte" class="entidades" type="text">
+			      		</div>
+			     	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionTransporte" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Provincia</label><br>
+							<select id="provinciaTransporte" name="provincia" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>Ate</option>
+							</select>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Distrito</label><br>
+			      			<select id="distritoTransporte" name="distrito" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>Ate</option>
+							</select>
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Horario Atención</label><br>
+			      			<input id="descripcionTransporte" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Url</label><br>
+			      			<input id="urlTransporte" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Buses disponibles</label><br>
+			      			<select id="busesTransporte" name="buses" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>opcion 1</option>
+							</select>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Tiempo de Mercado</label><br>
+			      			<input id="mercadoTransporte" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudTransporte" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			     		<div class="col-md-12">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudTransporte" class="entidades" type="text">
+			      		</div>
+			     	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-Transporte" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-Transporte" type="button" class="btn btn-primary">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
+	<section id="ventanaZona">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalZona" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Zonas</h4>
+		      </div>
+		      <div class="modal-body">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-6">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreZona" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionZona" class="entidades" type="text">
+			      		</div>
+			     	</div>
+					<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudZona" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudZona" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-Zona" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-Zona" type="button" class="btn btn-primary">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
+	<section id="ventanaUniversidad">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalUniversidad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Universidades</h4>
+		      </div>
+		      <div class="modal-body scroll">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-12">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreUniversidad" class="entidades" type="text">
+			      		</div>
+			     	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionUniversidad" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Número de Carreras</label><br>
+							<input id="carrerasUniversidad" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Provincia</label><br>
+			      			<select id="provinciaUniversidad" name="provincia" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>Lima</option>
+							</select>
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Distrito</label><br>
+			      			<select id="distritoUniversidad" name="distrito" class="entidades">
+								<option value='0' id="select2">---Ninguno---</option>
+								<option value='1'>Ate</option>
+							</select>
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Nombre de Contacto</label><br>
+			      			<input id="contactoUniversidad" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Url</label><br>
+			      			<input id="urlUniversidad" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Cantidad Estudiantes</label><br>
+			      			<input id="estudiantesUniversidad" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudUniversidad" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      	<div class="row">
+			     		<div class="col-md-12">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudUniversidad" class="entidades" type="text">
+			      		</div>
+			     	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-universidad" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-universidad" type="button" class="btn btn-primary">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
+	<section id="ventanaComisaria">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalComisaria" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Comisarias</h4>
+		      </div>
+		      <div class="modal-body">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-6">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreComisaria" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionComisaria" class="entidades" type="text">
+			      		</div>
+			     	</div>
+					<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudComisaria" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudComisaria" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-Comisaria" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-Comisaria" type="button" class="btn btn-primary">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
+	<section id="ventanaComercial">
+		<!-- Modal -->
+		<div class="modal fade" id="myModalComercial" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+		  <div class="modal-dialog modalEstilos" role="document">
+		    <div class="modal-content">
+		      <div class="modal-header">
+		        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+		        <h4 class="modal-title" id="myModalLabel">Comerciales</h4>
+		      </div>
+		      <div class="modal-body">
+			      <form action="">
+			     	<div class="row">
+			     		<div class="col-md-6">
+			      			<label for=""><span>*</span> Nombre</label><br>
+			      			<input id="nombreComercial" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Dirección</label><br>
+			      			<input id="direccionComercial" class="entidades" type="text">
+			      		</div>
+			     	</div>
+					<div class="row">
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Latitud</label><br>
+			      			<input id="latitudComercial" class="entidades" type="text">
+			      		</div>
+			      		<div class="col-md-6">
+			      			<label for=""><span>*</span> Longitud</label><br>
+			      			<input id="longitudComercial" class="entidades" type="text">
+			      		</div>
+			      	</div>
+			      </form>
+		      </div>
+		      <div class="modal-footer">
+		        <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+		        <button id="nuevo-Comercial" type="button" class="btn btn-primary">Guardar y nuevo</button>
+		        <button id="guardar-Comercial" type="button" class="btn btn-primary">Guardar</button>
+		      </div>
+		    </div>
+		  </div>
+		</div>
+	</section >
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
 	<script src="js/app.js" type="text/javascript" charset="utf-8" async defer></script>
+	<script src="js/vaidarentidades.js" type="text/javascript" charset="utf-8" async defer></script>
 </body>
 </html>
