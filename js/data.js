@@ -1,21 +1,21 @@
 ﻿//var load = function(){
-	            
-//	console.log("hi");
-//	AgregarEntidad("hola","chau",1,2,3);
+
+//  console.log("hi");
+//  AgregarEntidad("hola","chau",1,2,3);
 //};
 
 //$(document).ready(load);
 
 
-function devolverTipoCampo(columna){
+function devolverTipoCampo(columna) {
 
     var tipoCampo = "";
 
-    if(columna == 1){
+    if (columna == 1) {
         tipoCampo = "";
-    }else if(columna == 2){
+    } else if (columna == 2) {
         tipoCampo = "";
-    }else if(columna == 3){
+    } else if (columna == 3) {
         tipoCampo = "";
     } else if (columna == 4) {
         tipoCampo = "";
@@ -33,7 +33,7 @@ function devolverTipoCampo(columna){
 //        atr5: atr5};
 
 //    localStorage.setItem("obj", JSON.stringify(obj));
-//	CargarEntidad1();
+//  CargarEntidad1();
 
 //}
 
@@ -93,25 +93,25 @@ function AgregarEntidadProyectoEvaluado(nombreProyecto, direccion, fechaInicioVe
 
 
     var entidadProyectoEvaluado = {
-        nombreProyecto: nombreProyecto, 
-        direccion: direccion, 
-        fechaInicioVenta: fechaInicioVenta, 
+        nombreProyecto: nombreProyecto,
+        direccion: direccion,
+        fechaInicioVenta: fechaInicioVenta,
         estadoProyecto: estadoProyecto,
-        fechaInicioObra: fechaInicioObra, 
-        ubicacion: ubicacion, 
-        fechaEntrega: fechaEntrega, 
-        conVista: conVista, 
-        empresa: empresa, 
-        contacto: contacto, 
-        url: url, 
-        prioridad: prioridad, 
-        tipo: tipo, 
-        responsable: responsable, 
-        nombreContacto: nombreContacto, 
-        precioTotal: precioTotal, 
-        estadoEvaluación: estadoEvaluación, 
-        estadoDirectorio: estadoDirectorio, 
-        latitud: latitud, 
+        fechaInicioObra: fechaInicioObra,
+        ubicacion: ubicacion,
+        fechaEntrega: fechaEntrega,
+        conVista: conVista,
+        empresa: empresa,
+        contacto: contacto,
+        url: url,
+        prioridad: prioridad,
+        tipo: tipo,
+        responsable: responsable,
+        nombreContacto: nombreContacto,
+        precioTotal: precioTotal,
+        estadoEvaluación: estadoEvaluación,
+        estadoDirectorio: estadoDirectorio,
+        latitud: latitud,
         longitud: longitud
     };
 
@@ -120,32 +120,32 @@ function AgregarEntidadProyectoEvaluado(nombreProyecto, direccion, fechaInicioVe
 };
 
 function AgregarEntidadEstudioOfertas(nombreProyecto, direccion, empresa, provincia, distrito, prioridad, tipoConstruccion, tipoDepartamento, precioEstimado, responsable, nombreContacto, ubicacion, area, zonificacion, costoM2, precioTotal, estadoEvaluacion, estadoDirectorio, url, numeroCasas, numeroPisos, numeroViviendaHectarea, m2VendiblesCliente, latitud, longitud) {
-    
+
     var entidadEstudioOfertas = {
-        nombreProyecto: nombreProyecto, 
-        direccion: direccion, 
-        empresa: empresa, 
-        provincia: provincia, 
-        distrito: distrito, 
-        prioridad: prioridad, 
-        tipoConstruccion: tipoConstruccion, 
-        tipoDepartamento: tipoDepartamento, 
-        precioEstimado: precioEstimado, 
-        responsable: responsable, 
-        nombreContacto: nombreContacto, 
-        ubicacion: ubicacion, 
-        area: area, 
+        nombreProyecto: nombreProyecto,
+        direccion: direccion,
+        empresa: empresa,
+        provincia: provincia,
+        distrito: distrito,
+        prioridad: prioridad,
+        tipoConstruccion: tipoConstruccion,
+        tipoDepartamento: tipoDepartamento,
+        precioEstimado: precioEstimado,
+        responsable: responsable,
+        nombreContacto: nombreContacto,
+        ubicacion: ubicacion,
+        area: area,
         zonificacion: zonificacion,
-        costoM2: costoM2, 
-        precioTotal: precioTotal, 
+        costoM2: costoM2,
+        precioTotal: precioTotal,
         estadoEvaluacion: estadoEvaluacion,
-        estadoDirectorio: estadoDirectorio, 
-        url: url, 
+        estadoDirectorio: estadoDirectorio,
+        url: url,
         numeroCasas: numeroCasas,
-        numeroPisos: numeroPisos, 
-        numeroViviendaHectarea: numeroViviendaHectarea, 
+        numeroPisos: numeroPisos,
+        numeroViviendaHectarea: numeroViviendaHectarea,
         m2VendiblesCliente: m2VendiblesCliente,
-        latitud: latitud, 
+        latitud: latitud,
         longitud: longitud
     };
 
@@ -154,15 +154,15 @@ function AgregarEntidadEstudioOfertas(nombreProyecto, direccion, empresa, provin
 };
 
 function AgregarEntidadServicio(nombreServicio, direccion, distrito, horarioAtencion, descripcionServicio, nombreContacto, ubicacion, url, latitud, longitud) {
-    
+
     var entidadServicio = {
-        nombreServicio: nombreServicio, 
-        direccion: direccion, 
-        distrito: distrito, 
-        horarioAtencion: horarioAtencion, 
-        descripcionServicio: descripcionServicio, 
-        nombreContacto: nombreContacto, 
-        ubicacion: ubicacion, 
+        nombreServicio: nombreServicio,
+        direccion: direccion,
+        distrito: distrito,
+        horarioAtencion: horarioAtencion,
+        descripcionServicio: descripcionServicio,
+        nombreContacto: nombreContacto,
+        ubicacion: ubicacion,
         url: url,
         latitud: latitud,
         longitud: longitud
@@ -173,15 +173,15 @@ function AgregarEntidadServicio(nombreServicio, direccion, distrito, horarioAten
 };
 
 function AgregarEntidadTransporte(nombreTransporte, direccion, provincia, distrito, horarioAtencion, url, busesDisponibles, tiempoEnMercado, latitud, longitud) {
-    
+
     var entidadTransporte = {
-        nombreTransporte: nombreTransporte, 
-        direccion: direccion, 
-        provincia: provincia, 
-        distrito: distrito, 
-        horarioAtencion: horarioAtencion, 
-        url: url, 
-        busesDisponibles: busesDisponibles, 
+        nombreTransporte: nombreTransporte,
+        direccion: direccion,
+        provincia: provincia,
+        distrito: distrito,
+        horarioAtencion: horarioAtencion,
+        url: url,
+        busesDisponibles: busesDisponibles,
         tiempoEnMercado: tiempoEnMercado,
         latitud: latitud,
         longitud: longitud
@@ -192,15 +192,15 @@ function AgregarEntidadTransporte(nombreTransporte, direccion, provincia, distri
 };
 
 function AgregarEntidadUniversidad(nombreUniversidad, direccion, numeroCarreras, provincia, distrito, nombreContacto, url, cantidadEstudiantes, latitud, longitud) {
-    
+
     var entidadUniversidad = {
-        nombreUniversidad: nombreUniversidad, 
-        direccion: direccion, 
-        numeroCarreras: numeroCarreras, 
-        provincia: provincia, 
-        distrito:distrito, 
-        nombreContacto: nombreContacto, 
-        url: url, 
+        nombreUniversidad: nombreUniversidad,
+        direccion: direccion,
+        numeroCarreras: numeroCarreras,
+        provincia: provincia,
+        distrito: distrito,
+        nombreContacto: nombreContacto,
+        url: url,
         cantidadEstudiantes: cantidadEstudiantes,
         latitud: latitud,
         longitud: longitud
@@ -269,12 +269,12 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 25000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobado",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.121896,
+        longitud: -77.034776
     };
     var obj2 = {
         nombreProyecto: "Torres Pardo",
-        direccion: "",
+        direccion: "Calle Francia 715 Miraflores",
         fechaInicioVenta: "13/12/2016",
         estadoProyecto: "Aprobado",
         fechaInicioObra: "01/01/2017",
@@ -291,12 +291,12 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 30000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.122274,
+        longitud: -77.038172
     };
     var obj3 = {
         nombreProyecto: "Condominios LarcoMar",
-        direccion: "",
+        direccion: "Jorge Chavez 509",
         fechaInicioVenta: "23/01/2017",
         estadoProyecto: "Aprobado",
         fechaInicioObra: "25/03/2017",
@@ -313,12 +313,12 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 300000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.123451,
+        longitud: -77.036878
     };
     var obj4 = {
         nombreProyecto: "Condominios Miguel Grau",
-        direccion: "",
+        direccion: "Av. Grau 485 Miraflores",
         fechaInicioVenta: "24/01/2017",
         estadoProyecto: "Aprobado",
         fechaInicioObra: "21/03/2017",
@@ -335,12 +335,12 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 25000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.123168,
+        longitud: -77.034743
     };
     var obj5 = {
-        nombreProyecto: "Condominios Torres Limatambo",
-        direccion: "",
+        nombreProyecto: "Condominios Torres Arica",
+        direccion: "Calle Arica 262",
         fechaInicioVenta: "22/01/2017",
         estadoProyecto: "Aprobado",
         fechaInicioObra: "17/03/2017",
@@ -357,8 +357,8 @@ function CargarListaProyectoEvaluado() {
         precioTotal: 230000000,
         estadoEvaluación: "Aprobada",
         estadoDirectorio: "Aprobada",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.117330,
+        longitud: -77.035755
     };
 
     var Array = [];
@@ -374,18 +374,18 @@ function CargarListaProyectoEvaluado() {
 function CargarListaEstudioOfertas() {
 
     var obj1 = {
-        nombreProyecto: "Torres de Surquillo",
-        direccion: "",
+        nombreProyecto: "Torres de Berlín",
+        direccion: "Calle Berlín 778",
         empresa: "VivaGyM",
         provincia: "Lima",
-        distrito: "Surquillo",
+        distrito: "Miraflores",
         prioridad: "Alta",
         tipoConstruccion: "Departamentos",
         tipoDepartamento: "Grande",
         precioEstimado: "S/.300 000",
         responsable: "Jorge Luna",
         nombreContacto: "Jorge Luna",
-        ubicacion: "Surquillo",
+        ubicacion: "Miraflores",
         area: "",
         zonificacion: "",
         costoM2: "S/. 3000",
@@ -397,22 +397,22 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.120047,
+        longitud: -77.037901
     };
     var obj2 = {
-        nombreProyecto: "Condominios El Arrecife",
-        direccion: "",
+        nombreProyecto: "Condominios La Independencia",
+        direccion: "Calle Independencia 452",
         empresa: "VivaGyM",
-        provincia: "Maddalena del Mar",
-        distrito: "Maddalena del Mar",
+        provincia: "Miraflores",
+        distrito: "Miraflores",
         prioridad: "Alta",
         tipoConstruccion: "Departamentos",
         tipoDepartamento: "Grande",
         precioEstimado: "S/.400 000",
         responsable: "Víctor Saenz",
         nombreContacto: "Víctor Saenz",
-        ubicacion: "Maddalena del Mar",
+        ubicacion: "Miraflores",
         area: "",
         zonificacion: "",
         costoM2: "S/. 4000",
@@ -424,22 +424,22 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.115715,
+        longitud: -77.032386
     };
     var obj3 = {
         nombreProyecto: "Condominios Los Ángeles",
-        direccion: "",
+        direccion: "Calle José Gálvez 350",
         empresa: "VivaGyM",
-        provincia: "San Miguel",
-        distrito: "San Miguel",
+        provincia: "Miraflores",
+        distrito: "Miraflores",
         prioridad: "Alta",
         tipoConstruccion: "Departamentos",
         tipoDepartamento: "Grande",
         precioEstimado: "S/.400 000",
         responsable: "Sandra Rojas",
         nombreContacto: "Sandra Rojas",
-        ubicacion: "San Miguel",
+        ubicacion: "Miraflores",
         area: "",
         zonificacion: "",
         costoM2: "S/. 4000",
@@ -451,12 +451,12 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.121736,
+        longitud: -77.033105
     };
     var obj4 = {
         nombreProyecto: "Condominios Cerro Viejo",
-        direccion: "",
+        direccion: "Calle Gnrl. Borgoño 351",
         empresa: "Nakada Inmobiliaria",
         provincia: "Breña",
         distrito: "Breña",
@@ -478,22 +478,22 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.116197,
+        longitud: -77.033609
     };
     var obj5 = {
         nombreProyecto: "Torres de Nuevo Mundo",
-        direccion: "",
+        direccion: "Calle Elías Aguirre 365",
         empresa: "Nakada Inmobiliaria",
-        provincia: "Jesús María",
-        distrito: "Jesús María",
+        provincia: "Miraflores",
+        distrito: "Miraflores",
         prioridad: "Alta",
         tipoConstruccion: "Departamentos",
         tipoDepartamento: "Grande",
         precioEstimado: "S/.400 000",
         responsable: "César Tamariz",
         nombreContacto: "Sandra Rojas",
-        ubicacion: "Jesús María",
+        ubicacion: "Miraflores",
         area: "",
         zonificacion: "",
         costoM2: "S/. 4000",
@@ -505,8 +505,8 @@ function CargarListaEstudioOfertas() {
         numeroPisos: 20,
         numeroViviendaHectarea: "",
         m2VendiblesCliente: 100,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.116564,
+        longitud: -77.034854
     };
 
     var Array = [];
@@ -523,63 +523,63 @@ function CargarListaServicio() {
 
     var obj1 = {
         nombreServicio: "Grifo Primax",
-        direccion: "",
+        direccion: "Av. Grau 272",
         distrito: "Miraflores",
         horarioAtencion: "24 horas",
         descripcionServicio: "Auto Servicio",
         nombreContacto: "Ángel Rodríguez",
         ubicacion: "Miraflores",
         url: "www.primax.com.pe",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.120948,
+        longitud: -77.034825
     };
     var obj2 = {
         nombreServicio: "Clínica Stella Maris",
-        direccion: "",
+        direccion: "Calle José Galvez 893",
         distrito: "Miraflores",
         horarioAtencion: "24 horas",
         descripcionServicio: "Atención Salud",
         nombreContacto: "Raúl Borja",
         ubicacion: "Miraflores",
         url: "www.stellamaris.com.pe",
-        latitud: latitud,
-        longitud: longitud
+        latitud: 12.121213,
+        longitud: -77.038810
     };
     var obj3 = {
         nombreServicio: "FedEx",
-        direccion: "",
-        distrito: "Surco",
+        direccion: "Calle 2 de Mayo 970",
+        distrito: "Miraflores",//"Surco",
         horarioAtencion: "9am a 7pm",
         descripcionServicio: "Servicio de Mensajería y Paquetería",
         nombreContacto: "Merly Luna",
-        ubicacion: "Surco",
+        ubicacion: "Miraflores",
         url: "www.fedex.com/do",
-        latitud: latitud,
-        longitud: longitud
-    };
+        latitud: -12.117908,
+        longitud: -77.038360
+    };/////////////////////////////////////////hi
     var obj4 = {
         nombreServicio: "Centro de Atención Integral Contra la Violencia Hacia las Mujeres - Warmi Wasi",
-        direccion: "Jr. Huancavelica Nº 470 - 5to. Piso",
+        direccion: "Calle 2 de Mayo 864",
         distrito: "Lima",
         horarioAtencion: "9am a 6pm",
         descripcionServicio: "Servicio de Ayuda a la Mujer",
         nombreContacto: "Leila Torres",
-        ubicacion: "Centro de Lima",
+        ubicacion: "Miraflores",
         url: "www.munlima.gob.pe/servicios/social/warmi-wasi",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.117917,
+        longitud: -77.037708
     };
     var obj5 = {
         nombreServicio: "Mafisa Motors",
-        direccion: "Av. Nicolas Arriola N° 3050",
+        direccion: "Calle Coronel Inclán 227",
         distrito: "Lima",
         horarioAtencion: "9am a 6pm",
         descripcionServicio: "Servicio Mecánico Automotriz",
         nombreContacto: "Julio Sánchez",
         ubicacion: "San Luis",
         url: "www.mafisamotors.com",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.117529,
+        longitud: -77.031421
     };
 
     var Array = [];
@@ -596,63 +596,63 @@ function CargarListaTransporte() {
 
     var obj1 = {
         nombreTransporte: "Transporte Civa",
-        direccion: "",
+        direccion: "Calle Elías Aguirre 419",
         provincia: "Lima",
-        distrito: "Lima",
+        distrito: "Miraflores",
         horarioAtencion: "6am a 12am",
         url: "www.civa.com.pe",
         busesDisponibles: 25,
         tiempoEnMercado: "25 años",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.115735,
+        longitud: -77.034758,
     };
     var obj2 = {
         nombreTransporte: "Transporte Flores",
-        direccion: "",
+        direccion: "Calle Elías Aguirre 156",
         provincia: "Lima",
-        distrito: "Lima",
+        distrito: "Miraflores",
         horarioAtencion: "6am a 12am",
         url: "www.floreshnos.pe",
         busesDisponibles: 27,
         tiempoEnMercado: "30 años",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.118442,
+        longitud: -77.034736
     };
     var obj3 = {
         nombreTransporte: "Transporte Cruz del Sur",
-        direccion: "",
+        direccion: "Jr. Jorge Chávez 200",
         provincia: "Lima",
-        distrito: "Lima",
+        distrito: "Miraflores",
         horarioAtencion: "6am a 12am",
         url: "www.cruzdelsur.com.pe",
         busesDisponibles: 27,
         tiempoEnMercado: "28 años",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.119984,
+        longitud: -77.036903
     };
     var obj4 = {
         nombreTransporte: "Transporte Cromotex",
-        direccion: "",
+        direccion: "Calle Francia 360",
         provincia: "Lima",
-        distrito: "Lima",
+        distrito: "Miraflores",
         horarioAtencion: "6am a 12am",
         url: "www.cromotex.com.pe",
         busesDisponibles: 27,
         tiempoEnMercado: "26 años",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.122260,
+        longitud: -77.034553
     };
     var obj5 = {
         nombreTransporte: "Transporte ITTSA",
-        direccion: "",
+        direccion: "Libertad 115",
         provincia: "Lima",
-        distrito: "Lima",
+        distrito: "Miraflores",
         horarioAtencion: "6am a 12am",
         url: "www.ittsabus.com",
         busesDisponibles: 27,
         tiempoEnMercado: "24 años",
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.120403,
+        longitud: -77.032686
     };
 
     var Array = [];
@@ -668,64 +668,64 @@ function CargarListaTransporte() {
 function CargarListaUniversidad() {
 
     var obj1 = {
-        nombreUniversidad: "Científica del Sur",
-        direccion: "",
+        nombreUniversidad: "Universidad de Piura",
+        direccion: "Calle Mártir José Olaya 162",
         numeroCarreras: 15,
         provincia: "Lima",
         distrito: "Miraflores",
         nombreContacto: "Roberto Flores",
-        url: "www.cientifica.edu.pe",
+        url: "www.udep.edu.pe",
         cantidadEstudiantes: 500,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.120057,
+        longitud: -77.030241
     };
     var obj2 = {
-        nombreUniversidad: "PUCP",
-        direccion: "",
+        nombreUniversidad: "Científica del Sur",
+        direccion: "Av. Alfredo Benavides 291",
         numeroCarreras: 29,
         provincia: "Lima",
-        distrito: "San Miguel",
+        distrito: "Miraflores",
         nombreContacto: "Miriam Núñez",
-        url: "www.pucp.edu.pe",
+        url: "www.cientifica.edu.pe",
         cantidadEstudiantes: 1000,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.124222,
+        longitud: -77.030917
     };
     var obj3 = {
-        nombreUniversidad: "San Marcos",
-        direccion: "",
-        numeroCarreras: 37,
+        nombreUniversidad: "Universidad Sise",
+        direccion: "Calle Cantuarias 351",
+        numeroCarreras: 18,
         provincia: "Lima",
-        distrito: "Lima",
+        distrito: "Miraflores",
         nombreContacto: "Rogelio Méndez",
-        url: "www.unmsm.edu.pe",
+        url: "www.universidadsise.edu.pe",
         cantidadEstudiantes: 2000,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.121327,
+        longitud: -77.026196
     };
     var obj4 = {
-        nombreUniversidad: "UPC",
-        direccion: "",
+        nombreUniversidad: "Universidad Le Cordon Bleu",
+        direccion: "Av Vasco Núñez de Balboa 530, Miraflores",
         numeroCarreras: 23,
         provincia: "Lima",
-        distrito: "La Molina",
+        distrito: "Miraflores",
         nombreContacto: "Cinthya López",
-        url: "www.upc.edu.pe",
+        url: "www.ulcb.edu.pe",
         cantidadEstudiantes: 400,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.131191,
+        longitud: -77.025679
     };
     var obj5 = {
         nombreUniversidad: "USIL",
-        direccion: "",
+        direccion: "Bolognesi 228",
         numeroCarreras: 24,
         provincia: "Lima",
-        distrito: "La Molina",
+        distrito: "Miraflores",
         nombreContacto: "Diana Juárez",
         url: "www.usil.edu.pe",
         cantidadEstudiantes: 1100,
-        latitud: latitud,
-        longitud: longitud
+        latitud: -12.120529,
+        longitud: -77.035820
     };
 
     var Array = [];

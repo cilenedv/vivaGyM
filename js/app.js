@@ -56,7 +56,7 @@ $(document).ready(function (){
 		divText.append(textName);
 		var diconoUno =$("<div></div>").addClass("col-lg-1 col-md-1 col-sm-1");
 		$("#insert").append(diconoUno);
-		var ancorUno =$("<a></a>");
+		var ancorUno =$("<a></a>").attr("id","list-"+contador);
 		diconoUno.append(ancorUno);
 		var spanUno= $("<span></span>").addClass("glyphicon glyphicon-th-list list").attr("aria-hidden","true");
 		ancorUno.append(spanUno);
@@ -80,25 +80,22 @@ $(document).ready(function (){
 		var spanTres= $("<span></span>").addClass("glyphicon glyphicon-plus").attr("aria-hidden","true").attr("id", "agregar-" + contador).attr("data-target" , "#myModal-"+ contador).attr("data-toggle","modal");
 		ancorTres.append(spanTres);
 	};
-
-});
-
-// lista
-$(".list").click(function(){
-	$(".container-lista-entidades").toggleClass("show");
+	// lista
+	$(".list").click(function(){
+		$(".container-lista-entidades").toggleClass("show");
+		$("#slide").toggleClass("reducir");
+	});
+	$('.dropdown-toggle').dropdown();
+	editarLista();
 });
 
 // function dropdown
-
-$('.dropdown-toggle').dropdown();
 
 var editarLista = function(){
 	$("#editar-lista-entidades").click(botonLapiz);
 	$(".lap-editor").click(lapizEditor);
 	$(".np-list").keypress(guardadoEditado);
-}
-
-$(document).ready(editarLista);
+};
 
 var botonLapiz = function(){
 	var btnEditNombre = $(".lap-editor").toggle();
@@ -106,14 +103,14 @@ var botonLapiz = function(){
     for (i = 0; i < $(btnEditNombre).length; i++) {
       	$(btnEditNombre)[i].classList.remove("edit-hidden");
    	}
-}
+};
 
 var lapizEditor = function(){
 	var contenEdit = $(this).prev();
 		$(contenEdit).attr("contenteditable","true");
 		$(contenEdit).focus();
 		$(contenEdit).parent().addClass("inputCajaEdit");
-}
+};
 
 var guardadoEditado = function(e){
 	if (e.which != 13) {
@@ -123,7 +120,7 @@ var guardadoEditado = function(e){
 		$(this).attr("contenteditable","false");
 		$(this).parent().removeClass("inputCajaEdit");	
 	}
-}
+};
 
 
 
