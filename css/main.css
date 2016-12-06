@@ -41,3 +41,15 @@ span.caret.drop-list-ent {
 .edit-hidden{
 	display: none;
 }
+
+[contenteditable="true"]:active,
+[contenteditable="true"]:focus{
+border:none;
+outline:none;
+}
+
+.inputCajaEdit{
+	padding: 5px 15px;
+    border: 1px solid black;
+    box-shadow: inset 0px 0px 5px blue;
+}
