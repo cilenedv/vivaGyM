@@ -34,9 +34,34 @@
 .search{
 	margin-left: 10px;
 	border:none;
-	width: 250px;
+	width: 350px;
 }
 
 .glyphicon-menu-hamburger{
 	color: #000;
 }
+
+.title{
+	font-size: 1.3em;
+	font-weight: bold;
+}
+#slide{
+	display: none;
+	padding: 1%;
+	margin-top: 15%;
+    background: white;
+    position: absolute;
+    z-index: 2;
+}
+#slide div{
+	padding: 1%;
+}
+.divide{
+	border-top: 1px solid black
+}
+.show{
+	display: block;
+}
+
+
+

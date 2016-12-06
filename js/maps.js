@@ -48,10 +48,10 @@ var geocodeResult= function(results, status) {
         map = new google.maps.Map($(".mapa").get(0), mapOptions);
         map.fitBounds(results[0].geometry.viewport);
         var contentString = '<div id="div_ejemplo">'+
-        '<p>__nombre__</p>' +
-        '<p>__estado__</p>'+
-        '<p>__fecha__</p>'+
-        '<a href="http://www.spsdemo.com/websites/PublishingImages/Forms/ByCreatedDate.aspx/">'+
+        '<p><strong>Nombre:</strong>__nombre__</p>' +
+        '<p><strong>Estado:</strong>__estado__</p>'+
+        '<p><strong>Fecha:</strong>__fecha__</p>'+
+        '<a href="http://www.spsdemo.com/websites/PublishingImages/Forms/ByCreatedDate.aspx/" target="_blank">'+
         '<img src="img/link.png"></a>'+
         '<a href="">'+
         '<img src="img/editar.png"></a>'+
